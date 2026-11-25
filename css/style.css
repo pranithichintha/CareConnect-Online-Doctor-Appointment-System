@@ -1,0 +1,380 @@
+/* Basic page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9ff;
+    color: #243047;
+}
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background-color: white;
+}
+
+.logo {
+    color: #1677c8;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #243047;
+}
+
+.nav-button,
+.main-button {
+    background-color: #1677c8;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Hero section */
+
+.hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 10%;
+    background: linear-gradient(
+        120deg,
+        #e4f3ff,
+        #f5f9ff
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #1677c8;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #1677c8;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Services section */
+
+.services {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dce7f0;
+}
+
+.service-card h3 {
+    color: #1677c8;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #243047;
+    color: white;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
+
+/* Doctor listing */
+
+.doctors-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.doctors-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.doctor-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 30px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dce7f0;
+}
+
+.doctor-card h2 {
+    color: #1677c8;
+    margin-bottom: 15px;
+}
+
+.doctor-card p {
+    margin-bottom: 15px;
+}
+
+/* Appointment form */
+
+.booking-section {
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dce7f0;
+}
+
+.booking-section h1 {
+    margin-bottom: 25px;
+}
+
+.booking-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking-section input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.booking-section label {
+    font-weight: bold;
+}
+
+.booking-section button {
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#message {
+    margin-top: 20px;
+    color: green;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .doctor-container {
+        flex-direction: column;
+    }
+
+    .booking-section {
+        margin: 25px 15px;
+    }
+}
+
+/* My appointments page */
+
+.appointments-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.appointments-section h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#appointmentList {
+    max-width: 700px;
+    margin: 35px auto;
+}
+
+.appointment-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #dce7f0;
+    text-align: left;
+}
+
+.appointment-card h3 {
+    color: #1677c8;
+    margin-bottom: 15px;
+}
+
+.appointment-card p {
+    margin-bottom: 12px;
+}
+
+.cancel-button {
+    background: #dc3545;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cancel-button:hover {
+    background: #b02a37;
+}
+
+#appointmentMessage {
+    color: green;
+    font-weight: bold;
+}
+
+/* Common header and navigation */
+
+.site-header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.site-header h1 {
+    color: #1976d2;
+    margin: 0;
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #26354d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #1976d2;
+}
+
+/* Admin page */
+
+.appointments-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+.appointments-section h2 {
+    color: #26354d;
+    margin-bottom: 25px;
+}
+
+.appointment-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Mobile-friendly layout */
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .appointments-section {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+

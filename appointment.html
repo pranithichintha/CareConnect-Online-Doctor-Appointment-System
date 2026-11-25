@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareConnect | Book Appointment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+    <h1>CareConnect</h1>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">My Appointments</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+    <section class="booking-section">
+
+        <h1>Book Your Appointment</h1>
+
+        <form id="appointmentForm">
+
+            <label>Patient Name</label>
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label>Email Address</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Selected Doctor</label>
+            <input
+                type="text"
+                id="doctor"
+                readonly
+            >
+
+            <label>Appointment Date</label>
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <button type="submit" class="main-button">
+                Confirm Appointment
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
